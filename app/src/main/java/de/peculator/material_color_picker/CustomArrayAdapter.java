@@ -1,6 +1,7 @@
 package de.peculator.material_color_picker;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,37 +15,41 @@ import java.util.List;
  */
 public class CustomArrayAdapter extends ArrayAdapter<String> {
 
-    private List<String> names;
+    private List<MaterialColorTheme> colors;
     private Context context;
 
     public CustomArrayAdapter(Context context, int resourceId,
-                              List<String> names) {
-        super(context, resourceId, names);
-        this.names = names;
+                              List<MaterialColorTheme> colors) {
+        super(context, resourceId);
+        this.colors = colors;
         this.context = context;
+    }
+
+    @Override
+    public int getCount() {
+        return colors.size();
     }
 
     @Override
     public View getDropDownView(int position, View convertView,
                                 ViewGroup parent) {
-        return getCustomView(position, convertView, parent);
+        return getCustomView(position, parent);
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        return getCustomView(position, convertView, parent);
+        return getCustomView(position, parent);
     }
 
-    public View getCustomView(int position, View convertView, ViewGroup parent) {
+    public View getCustomView(int position, ViewGroup parent) {
 
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View row = inflater.inflate(R.layout.spinner_item, parent, false);
         TextView label = (TextView) row.findViewById(R.id.name);
-        label.setText(names.get(position));
+        label.setText(colors.get(position).getColorName(position));
 
         View colorView = row.findViewById(R.id.color);
-        colorView.setBackgroundColor(MaterialColorPickerHelper.getColorByName(names.get(position)));
-
+        colorView.setBackgroundColor(MaterialColorTheme.getColorResourceByName(getContext(), "colorPrimary" + colors.get(position).getPrimaryColorName()));
 
         return row;
     }

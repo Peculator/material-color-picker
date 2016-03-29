@@ -1,9 +1,1190 @@
-<resources>>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+
+        <item name="android:divider">@color/colorDivider</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryText</item>
+        <item name="android:textColorSecondary">@color/colorSecondaryText</item>
+        <item name="android:icon">@color/colorIcon</item>
+
+    </style>
+
+    <!---/////////////////////////////// RED ///////////////////////////////-->
+    <style name="red.red" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentRed</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.pink" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentPink</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.purple" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentPurple</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.purpleDeep" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentPurpleDeep</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.indigo" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentIndigo</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.blue" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentBlue</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.blueLight" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentBlueLight</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.cyan" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentCyan</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.teal" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentTeal</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.green" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentGreen</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.greenLight" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentGreenLight</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.lime" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentLime</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.yellow" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentYellow</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.amber" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentAmber</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.orange" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentOrange</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.orangeDeep" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentOrangeDeep</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.brown" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentBrown</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.grey" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentGrey</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="red.blueGray" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentBlueGrey</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkRed</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkRed</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <!---/////////////////////////////// PINK ///////////////////////////////-->
+
+    <style name="pink.red" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentRed</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.pink" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentPink</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.purple" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentPurple</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.purpleDeep" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentPurpleDeep</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.indigo" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentIndigo</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.blue" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentBlue</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.blueLight" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentBlueLight</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.cyan" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentCyan</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.teal" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentTeal</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.green" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentGreen</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.greenLight" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentGreenLight</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.lime" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentLime</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.yellow" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentYellow</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.amber" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentAmber</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.orange" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentOrange</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.orangeDeep" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentOrangeDeep</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.brown" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentBrown</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.grey" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentGrey</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="pink.blueGray" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentBlueGrey</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPink</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPink</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <!---/////////////////////////////// Purple ///////////////////////////////-->
+
+    <style name="purple.red" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentRed</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.pink" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentPink</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.purple" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentPurple</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.purpleDeep" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentPurpleDeep</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.indigo" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentIndigo</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.blue" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentBlue</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.blueLight" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentBlueLight</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.cyan" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentCyan</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.teal" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentTeal</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.green" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentGreen</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.greenLight" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentGreenLight</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.lime" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentLime</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.yellow" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentYellow</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.amber" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentAmber</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.orange" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentOrange</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.orangeDeep" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentOrangeDeep</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.brown" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentBrown</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.grey" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentGrey</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purple.blueGray" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentBlueGrey</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <!---/////////////////////////////// PurpleDeep ///////////////////////////////-->
+
+    <style name="purpleDeep.red" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentRed</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.pink" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentPink</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.purple" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentPurple</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.purpleDeep" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentPurpleDeep</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.indigo" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentIndigo</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.blue" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentBlue</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.blueLight" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentBlueLight</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.cyan" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentCyan</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.teal" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentTeal</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.green" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentGreen</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.greenLight" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentGreenLight</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.lime" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentLime</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.yellow" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentYellow</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.amber" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentAmber</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.orange" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentOrange</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.orangeDeep" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentOrangeDeep</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.brown" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentBrown</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.grey" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentGrey</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="purpleDeep.blueGray" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPurpleDeep</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="colorAccent">@color/colorAccentBlueGrey</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurpleDeep</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <!---/////////////////////////////// Indigo ///////////////////////////////-->
+
+    <style name="indigo.red" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentRed</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.pink" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentPink</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.purple" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentPurple</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.purpleDeep" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentPurpleDeep</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.indigo" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentIndigo</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.blue" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentBlue</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.blueLight" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentBlueLight</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.cyan" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentCyan</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.teal" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentTeal</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.green" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentGreen</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.greenLight" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentGreenLight</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.lime" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentLime</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.yellow" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentYellow</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.amber" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentAmber</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.orange" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentOrange</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.orangeDeep" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentOrangeDeep</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.brown" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentBrown</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.grey" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentGrey</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+    <style name="indigo.blueGray" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryIndigo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkIndigo</item>
+        <item name="colorAccent">@color/colorAccentBlueGrey</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkIndigo</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkIndigo</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style>
+
+
+
+
+
+    <!-- Purple-Amber theme. -->
+    <!--style name="purple.amber" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPurple</item>
+        <item name="colorAccent">@color/colorAccentAmber</item>
+
+        <item name="android:statusBarColor">@color/colorPrimaryDarkPurple</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDarkPurple</item>
+
+        <item name="android:icon">@color/colorIcon</item>
+    </style-->
+
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
+ 

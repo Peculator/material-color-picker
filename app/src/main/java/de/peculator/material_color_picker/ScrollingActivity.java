@@ -4,9 +4,12 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.transition.Explode;
+import android.transition.Transition;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
 
 public class ScrollingActivity extends AppCompatActivity {
 
@@ -15,7 +18,7 @@ public class ScrollingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         // Activity reference needed for the style
-        MaterialColorPickerHelper.init(this, getIntent(), R.style.AppTheme_NoActionBar);
+        MaterialColorPickerHelper.init(this, getIntent(), getWindow(), R.style.AppTheme_NoActionBar);
 
         setContentView(R.layout.activity_scrolling);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -29,6 +32,9 @@ public class ScrollingActivity extends AppCompatActivity {
                 mcpd.show(getFragmentManager(), null);
             }
         });
+
+        View test = findViewById(R.id.view);
+        test.setBackgroundColor(MaterialColorPickerHelper.getPrimaryLightColor());
     }
 
     @Override

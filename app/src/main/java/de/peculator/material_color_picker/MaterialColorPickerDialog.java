@@ -1,16 +1,16 @@
 package de.peculator.material_color_picker;
 
+import android.app.Dialog;
 import android.app.DialogFragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,7 +18,9 @@ import java.util.List;
  */
 public class MaterialColorPickerDialog extends DialogFragment implements AdapterView.OnItemSelectedListener {
     private int primaryColorIndex = 0;
-    private int AccentColorIndex = 0;
+    private int accentColorIndex = 0;
+    private CustomArrayAdapter dataAdapter;
+    private TextView hintText;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -32,21 +34,12 @@ public class MaterialColorPickerDialog extends DialogFragment implements Adapter
         spinnerB.setOnItemSelectedListener(this);
 
         // Spinner Drop down elements
-        List<String> categories = new ArrayList<String>();
-        categories.add("Automobile");
-        categories.add("Business Services");
-        categories.add("Computers");
-        categories.add("Education");
-        categories.add("Personal");
-        categories.add("Travel");
+        List<MaterialColorTheme> colors = MaterialColorTheme.getAllColorThemes();
 
         // Creating adapter for spinner
-        ArrayAdapter<String> dataAdapter = new CustomArrayAdapter(getActivity(), R.layout.spinner_item, categories);//new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, categories);
+        dataAdapter = new CustomArrayAdapter(getActivity(), R.layout.spinner_item, colors);
 
-        // Drop down layout style - list view with radio button
-        //dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        // attaching data adapter to spinner
+        // attaching both data adapter to spinner
         spinnerA.setAdapter(dataAdapter);
         spinnerB.setAdapter(dataAdapter);
 
@@ -54,20 +47,42 @@ public class MaterialColorPickerDialog extends DialogFragment implements Adapter
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MaterialColorPickerHelper.update(getActivity(), getActivity().getIntent(), 0, 0);
+                MaterialColorPickerHelper.update(getActivity(), getActivity().getIntent(), primaryColorIndex, accentColorIndex, primaryColorIndex);
             }
         });
+
+        hintText = (TextView) v.findViewById(R.id.hint);
 
         return v;
     }
 
     @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+    public void onStart() {
+        super.onStart();
 
+        Dialog dialog = getDialog();
+        if (dialog != null) {
+            dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        }
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        if (parent.getId() == R.id.spinnerPrimary) {
+            this.primaryColorIndex = position;
+        } else if (parent.getId() == R.id.spinnerAccent) {
+            this.accentColorIndex = position;
+        }
+
+        if(this.primaryColorIndex == this. accentColorIndex){
+            hintText.setVisibility(View.VISIBLE);
+        }else{
+            hintText.setVisibility(View.GONE);
+        }
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
-
     }
+
 }
