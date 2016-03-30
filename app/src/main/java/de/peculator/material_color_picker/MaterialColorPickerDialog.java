@@ -19,7 +19,7 @@ import java.util.List;
 public class MaterialColorPickerDialog extends DialogFragment implements AdapterView.OnItemSelectedListener {
     private int primaryColorIndex = 0;
     private int accentColorIndex = 0;
-    private CustomArrayAdapter dataAdapter;
+    private ColorListAdapter dataAdapter;
     private TextView hintText;
 
     @Override
@@ -37,7 +37,7 @@ public class MaterialColorPickerDialog extends DialogFragment implements Adapter
         List<MaterialColorTheme> colors = MaterialColorTheme.getAllColorThemes();
 
         // Creating adapter for spinner
-        dataAdapter = new CustomArrayAdapter(getActivity(), R.layout.spinner_item, colors);
+        dataAdapter = new ColorListAdapter(getActivity(), R.layout.spinner_item, colors);
 
         // attaching both data adapter to spinner
         spinnerA.setAdapter(dataAdapter);
@@ -47,7 +47,7 @@ public class MaterialColorPickerDialog extends DialogFragment implements Adapter
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MaterialColorPickerHelper.update(getActivity(), getActivity().getIntent(), primaryColorIndex, accentColorIndex, primaryColorIndex);
+                MaterialColorPickerHelper.update(getActivity(), getActivity().getIntent(), primaryColorIndex, accentColorIndex);
             }
         });
 

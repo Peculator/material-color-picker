@@ -4,12 +4,9 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.transition.Explode;
-import android.transition.Transition;
 import android.view.View;
 import android.view.Menu;
-import android.view.MenuItem;
-import android.view.Window;
+import android.widget.ListView;
 
 public class ScrollingActivity extends AppCompatActivity {
 
@@ -33,8 +30,11 @@ public class ScrollingActivity extends AppCompatActivity {
             }
         });
 
-        View test = findViewById(R.id.view);
-        test.setBackgroundColor(MaterialColorPickerHelper.getPrimaryLightColor());
+        View lightView = findViewById(R.id.lightView);
+        lightView.setBackgroundColor(MaterialColorPickerHelper.getPrimaryLightColor());
+
+        //ListView listView = (ListView) findViewById(R.id.listView);
+        //listView.setAdapter(new ThemeListAdapter(getApplicationContext(),R.layout.theme_list_view_item ,MaterialColorTheme.getAllColorThemes()));
     }
 
     @Override

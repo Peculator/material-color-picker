@@ -13,7 +13,6 @@ import android.view.Window;
 public class MaterialColorPickerHelper {
 
     private static final String KEY_PRIMARY = "colorThemePrimaryIndex";
-    private static final String KEY_PRIMARY_LIGHT = "colorThemePrimaryLightIndex";
     private static final String KEY_ACCENT = "colorThemeAccentIndex";
     public static int primaryColorValue = -1;
     public static int primaryColorLightValue = -1;
@@ -34,17 +33,15 @@ public class MaterialColorPickerHelper {
         Log.i("my", "init " + intent.getIntExtra(KEY_PRIMARY, -1));
         int primaryColor = intent.getIntExtra(KEY_PRIMARY, -1);
         int accentColor = intent.getIntExtra(KEY_ACCENT, -1);
-        int lightColor = intent.getIntExtra(KEY_PRIMARY_LIGHT, -1);
 
-        if (accentColor != -1 && primaryColor != -1 && lightColor != -1) {
+        if (accentColor != -1 && primaryColor != -1) {
 
             String colorA = MaterialColorTheme.getAllColorNames().get(primaryColor);
             String colorB = MaterialColorTheme.getAllColorNames().get(accentColor);
-            String colorC = MaterialColorTheme.getAllColorNames().get(lightColor);
 
             primaryColorValue = MaterialColorTheme.getColorResourceByName(context, "colorPrimary" + colorA.substring(0, 1).toUpperCase() + colorA.substring(1));
             accentColorValue = MaterialColorTheme.getColorResourceByName(context, "colorAccent" + colorB.substring(0, 1).toUpperCase() + colorB.substring(1));
-            primaryColorLightValue = MaterialColorTheme.getColorResourceByName(context, "colorPrimaryLight" + colorC.substring(0, 1).toUpperCase() + colorC.substring(1));
+            primaryColorLightValue = MaterialColorTheme.getColorResourceByName(context, "colorPrimaryLight" + colorA.substring(0, 1).toUpperCase() + colorA.substring(1));
 
             int res = MaterialColorTheme.getColorStyleByName(context, colorA + "." + colorB);
 
@@ -65,13 +62,18 @@ public class MaterialColorPickerHelper {
             window.setNavigationBarColor(darkColor);
         } else {
             context.setTheme(defaultTheme);
+            context.getApplicationContext().setTheme(defaultTheme);
+
+            primaryColorValue = MaterialColorTheme.getColorResourceByName(context, "colorPrimaryIndigo");
+            accentColorValue = MaterialColorTheme.getColorResourceByName(context, "colorAccentPink");
+            primaryColorLightValue = MaterialColorTheme.getColorResourceByName(context, "colorPrimaryLightIndigo");
+
         }
     }
 
-    public static void update(Activity activity, Intent intent, int primaryColor, int accentColor, int primaryColorLight) {
+    public static void update(Activity activity, Intent intent, int primaryColor, int accentColor) {
 
         intent.putExtra(KEY_PRIMARY, primaryColor);
-        intent.putExtra(KEY_PRIMARY_LIGHT, primaryColorLight);
         intent.putExtra(KEY_ACCENT, accentColor);
 
         if (activity != null) {

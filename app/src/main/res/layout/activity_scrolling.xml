@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
         tools:context="de.peculator.material_color_picker.ScrollingActivity"
-        android:layout_above="@+id/view">
+        android:layout_above="@+id/lightView">
 
 
         <android.support.design.widget.AppBarLayout
