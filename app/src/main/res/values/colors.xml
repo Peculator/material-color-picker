@@ -125,10 +125,24 @@
     <color name="colorPrimaryLightBlueGrey">#cfd8dc</color>
     <color name="colorAccentBlueGrey">#607d8b</color>
 
-    <color name="colorPrimaryText">#212121</color>
-    <color name="colorSecondaryText">#727272</color>
-    <color name="colorIcon">#FFFFFF</color>
-    <color name="colorIconDark">#000000</color>
-    <color name="colorDivider">#B6B6B6</color>
+
+    <!-- Others -->
+
+    <color name="backgroundColor">#FAFAFA</color>
+    <color name="backgroundColorDark">#303030</color>
+
+    <color name="colorPrimaryText">#DD000000</color>
+    <color name="colorPrimaryTextDark">#ffffffff</color>
+
+    <color name="colorSecondaryText">#89000000</color>
+    <color name="colorSecondaryDark">#b2ffffff</color>
+
+    <color name="colorIcon">#60FFFFFF</color>
+    <color name="colorIconDark">#60000000</color>
+
+    <color name="colorDivider">#60FFFFFF</color>
+    <color name="colorDividerDark">#60000000</color>
+
     <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
 </resources>

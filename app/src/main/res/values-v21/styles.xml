@@ -3166,7 +3166,7 @@
         <item name="android:icon">@color/colorIconDark</item>
     </style>
 
-    <style name="amber.amber" parent="AppTheme.NoActionBar">
+    <style name="amber.amber" parent="Theme.AppCompat.Light.NoActionBar">
 
         <item name="colorPrimary">@color/colorPrimaryAmber</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDarkAmber</item>

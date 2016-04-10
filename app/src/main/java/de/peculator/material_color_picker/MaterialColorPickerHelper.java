@@ -17,15 +17,21 @@ public class MaterialColorPickerHelper {
     public static int primaryColorValue = -1;
     public static int primaryColorLightValue = -1;
     public static int accentColorValue = -1;
+    private static int textColorLight;
 
-    public static int getPrimaryColor(){
+    private static int textColorDark;
+    private static int textColorSecondary;
+    private static int textColorSecondaryDark;
+
+    public static int getPrimaryColor() {
         return primaryColorValue;
     }
 
-    public static int getPrimaryLightColor(){
+    public static int getPrimaryLightColor() {
         return primaryColorLightValue;
     }
-    public static int getAccentColor(){
+
+    public static int getAccentColor() {
         return accentColorValue;
     }
 
@@ -33,6 +39,11 @@ public class MaterialColorPickerHelper {
         Log.i("my", "init " + intent.getIntExtra(KEY_PRIMARY, -1));
         int primaryColor = intent.getIntExtra(KEY_PRIMARY, -1);
         int accentColor = intent.getIntExtra(KEY_ACCENT, -1);
+
+        textColorLight = ContextCompat.getColor(context, R.color.colorPrimaryText);
+        textColorDark = ContextCompat.getColor(context, R.color.colorPrimaryTextDark);
+        textColorSecondary = ContextCompat.getColor(context, R.color.colorSecondaryText);
+        textColorSecondaryDark = ContextCompat.getColor(context, R.color.colorSecondaryText);
 
         if (accentColor != -1 && primaryColor != -1) {
 
@@ -61,6 +72,8 @@ public class MaterialColorPickerHelper {
             window.setStatusBarColor(darkColor);
             window.setNavigationBarColor(darkColor);
         } else {
+
+            // First Start
             context.setTheme(defaultTheme);
             context.getApplicationContext().setTheme(defaultTheme);
 
@@ -82,5 +95,21 @@ public class MaterialColorPickerHelper {
         } else {
             Log.e("my", "activity is null");
         }
+    }
+
+    public static int getTextColorLight() {
+        return textColorLight;
+    }
+
+    public static int getTextColorDark() {
+        return textColorDark;
+    }
+
+    public static int getTextColorSecondary() {
+        return textColorSecondary;
+    }
+
+    public static int getTextColorSecondaryDark() {
+        return textColorSecondaryDark;
     }
 }
